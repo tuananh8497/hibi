@@ -10,3 +10,11 @@ setup: # Set up the environment.
 run: # Run the main ingestion script.
 	@echo "Running the ingestion script..."
 	python3 src/ingestion/read_spreadsheet.py
+
+start-local-spark:
+	$(SPARK_HOME)/sbin/start-connect-server.sh
+	@echo "Local Spark Connect server started."
+
+stop-local-spark:
+	$(SPARK_HOME)/sbin/stop-connect-server.sh
+	@echo "Local Spark Connect server stopped."

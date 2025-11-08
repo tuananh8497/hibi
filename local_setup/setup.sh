@@ -4,7 +4,6 @@ PROJECT_NAME="hibi-project"
 
 
 echo "Using python version: $PYTHON_VERSION"
-# Ref: https://github.com/pyenv/pyenv?tab=readme-ov-file#unixmacos
 brew update
 
 if command -v pyenv >/dev/null 2>&1 || command -v pyenv-virtualenv >/dev/null 2>&1; then
