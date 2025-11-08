@@ -24,7 +24,7 @@ flowchart TD;
 
 ### Installation
 ```bash
-git clone https://github.com/tnqa/hibi.git
+git clone https://github.com/tuananh8497/hibi.git
 cd hibi
 pip install -r requirements.txt
 ```
