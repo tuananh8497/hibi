@@ -7,15 +7,23 @@ Hibi is a data project aimed at analyzing expense tracking data in Google Sheets
 title: Overview
 ---
 flowchart LR;	
-	subgraph "Data Source"
+	subgraph SRC["Data Source"]
 	A@{ shape: cyl, label: "Google Sheet" }
 	end
 
-	subgraph "Transformation - dbt"
+	subgraph ETL["Transformation - dbt"]
 	B@{ shape: circle, label: "Spark" }
     end
 
 	A --> B
+
+    %% Teal / aqua tone for source
+    style SRC fill:#0E7490,stroke:#155E75,stroke-width:2px,color:#FFFFFF
+    style A fill:#14B8A6,stroke:#0F766E,color:#FFFFFF
+
+    %% Warm amber for transformation
+    style ETL fill:#B45309,stroke:#92400E,stroke-width:2px,color:#FFFFFF
+    style B fill:#F59E0B,stroke:#92400E,color:#FFFFFF
 ```
 
 ## Quick Start
