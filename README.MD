@@ -1,38 +1,42 @@
 # Hibi
 
-A simple project description goes here.
+A minimal CLI application for expense tracking using Google Sheets.
 
 ## Quick Start
 
 ### Prerequisites
 
-- Requirement 1
-- Requirement 2
+- Python 3.12+
+- Google Cloud Platform account
+- Google Sheets API enabled
+- OAuth 2.0 credentials
 
 ### Installation
-
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/hibi.git
-
-# Navigate to project directory
+git clone https://github.com/tnqa/hibi.git
 cd hibi
-
-# Install dependencies
-
+pip install -r requirements.txt
 ```
 
 ### Usage
 
 ```bash
-# Basic usage example
-
+TODO
 ```
+
+## Setup Credentials
+
+1. Copy `env/client_secret.json.template` to `env/client_secret.json`
+2. Fill in your Google OAuth credentials in the copied file
+3. Never commit the actual credentials file to version control
 
 ## Features
 
-- Feature 1
-- Feature 2
+- Track expenses via command line
+- Sync with Google Sheets
+- View expense summaries
+- Multiple currency support
+- Simple and fast data entry
 
 ## License
 
