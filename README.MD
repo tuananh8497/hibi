@@ -6,10 +6,15 @@ Hibi is a data project aimed at analyzing expense tracking data in Google Sheets
 ---
 title: Overview
 ---
-flowchart TD;	
+flowchart LR;	
+	subgraph "Data Source"
 	A@{ shape: cyl, label: "Google Sheet" }
+	end
+
+	subgraph "Transformation - dbt"
 	B@{ shape: circle, label: "Spark" }
-    
+    end
+
 	A --> B
 ```
 
