@@ -1,6 +1,17 @@
 # Hibi
 
-A minimal CLI application for expense tracking using Google Sheets.
+Hibi is a data project aimed at analyzing expense tracking data in Google Sheets. It extends beyond Google Sheets' standard reporting capabilities by applying AI to enhance spending pattern analysis, providing deeper insights into your financial data.
+
+```mermaid
+---
+title: Overview
+---
+flowchart TD;	
+	A@{ shape: cyl, label: "Google Sheet" }
+	B@{ shape: circle, label: "Spark" }
+    
+	A --> B
+```
 
 ## Quick Start
 
